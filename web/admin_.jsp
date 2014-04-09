@@ -11,7 +11,6 @@
     <%@page import="java.sql.*, database.*" %>
     <link rel="icon" href="assets/img/icons/logo.ico"/>
     <link rel="stylesheet" href="assets/css/stylemain.css"/>
-    <link rel="stylesheet" href="assets/css/animate.css"/>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
     <script src="js/jquery-1.7.2.min.js"></script> 
 </head>

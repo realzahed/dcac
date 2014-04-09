@@ -270,10 +270,7 @@
        <span class="help-block">Click on the image to <strong>Delete</strong> (Enabled only if more than one image is available)</span>
     </div>
     </div>
-  </div>
- <div id="scrolltoTop">
-    <a href="#">Top <i class="fa fa-chevron-up"></i></a>
-</div>      
+  </div>     
 <script type="text/javascript">
     $(document).ready(function(){
         $('#sortBy').change(function (){
@@ -309,11 +306,5 @@
         });
     });         
 </script>     
-<script type="text/javascript">
-$('#scrolltoTop').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-        });
-</script>
 </body>
 </html>

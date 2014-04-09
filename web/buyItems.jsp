@@ -32,6 +32,13 @@
         .fk-float-left, .fllt {
             float: left;
         }
+        .radio input[type="radio"],
+        .radio-inline input[type="radio"],
+        .checkbox input[type="checkbox"],
+        .checkbox-inline input[type="checkbox"] {
+          float: left;
+          margin-left: -20px;
+        }
     </style>
 </head>
 <body>  
@@ -89,24 +96,41 @@
                         </div>
                         </div>
                         <div class="form-group">
-                        <label for="disabledInput2" class="col-sm-2 control-label">State</label>
+                         <label for="disabledInput2" class="col-sm-2 control-label">State</label>
                          <div class="col-sm-4">
                             <input class="form-control" id="disabledInput2" type="text" placeholder="Andhra Pradesh (Service available only in AP)" disabled>
+                         </div>
                         </div>
+                        <span class="label label-primary">Payment Mode</span>
+                        <div class="radio-inline">
+                            <label>
+                              <input type="radio" name="ynRadio" class="radioBtn" value="no" />Cash On Delivery
+                            </label>
                         </div>
-                          <div class="form-group">
+                        <div class="radio-inline">
+                            <label>
+                              <input type="radio" name="ynRadio" class="radioBtn" value="yes" />Debit Card
+                            </label>
+                        </div>  
+                        <div class="form-group">
+                            <label for="inputpayment" class="col-sm-2 control-label">Debit Card Number <span class="text-danger">*</span> </label>
+                             <div class="col-sm-4">
+                                 <input type="text" class="form-control" id="textField"  maxlength="20" onkeypress="return isNumber(event)" />
+                             </div>
+                        </div>
+                        <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                               <button type="submit" class="btn button-primary" value="Add Details">Place Order & Continue</button>
                             </div>
-                           </div>
-                          <span class="col-sm-offset-1 col-sm-10 help-block">Fields marked as  <span class="text-danger">*</span> are required.</span>
+                        </div>
+                        <span class="col-sm-offset-1 col-sm-10 help-block">Fields marked as  <span class="text-danger">*</span> are required.</span>
                     </form>
                 </div>
                <div class="flrt fk-co-addr-seperator col-sm-1 col-md-pull-6 hidden-xs">
                     <div id="co_select_or_label" class="fllt co_select_or_label">
                         <b>OR</b>
                     </div>
-                    <div class="flrt" style="width:60%;min-height:370px;border-left:1px solid #333333;margin-top: 30px;"></div>
+                    <div class="flrt" style="width:60%;min-height:570px;border-left:1px solid #333333;margin-top: 30px;"></div>
                </div>
                      <%
                if (User.getAddress() != null && User.getMobileNum() != null && User.getUserEmail() != null && User.getUsername() != null){
@@ -185,5 +209,22 @@
           </div>
         </div>
       </div>
+<script type="text/javascript">
+$(".radioBtn").click(function() {
+    $("#textField").attr("disabled", true);
+    if ($("input[name=ynRadio]:checked").val() === "yes") {
+        $("#textField").attr("disabled", false);
+    }
+});
+
+function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+</script>
   </body>
 </html>

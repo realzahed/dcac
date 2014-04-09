@@ -1,6 +1,5 @@
 <script src="js/jquery-1.7.2.min.js"></script>     
 <link rel="stylesheet" href="assets/css/stylemain.css"/>
-<link rel="stylesheet" href="assets/css/shop-homepage.css"/>
 <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
 <style>
     #searchrow {

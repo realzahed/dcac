@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DCAC - Major Project">
+    <meta name="description" content="DCAC - Major Project - Frequently Asked Questions">
     <meta name="author" content="Zahed Shareef">
     <title>DCAC FAQ</title>        
     <!-- Default Stylesheets -->
@@ -137,12 +137,12 @@
             <div class="col-lg-8 col-lg-offset-2" id="social">
                 <h2>F.A.Q. Distributed Content Access On Cloud</h2>
                 <p>Feel free to email us to provide some feedback on our web-application, give us suggestions for adding new features, or to just say hello!</p>
-                <a href="feedback@dcac.com">feedback@dcac.com</a>
+                <a href="mailto:feedback@dcac.com">feedback@dcac.com</a>
                 <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://twitter.com/dcac" style="background-color:#87318c;border-color: #632466;" class="btn btn-danger"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a></li>
-                    <li><a href="https://facebook.com/dcac" class="btn btn-facebook"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    <li><a href="#" style="background-color:#87318c;border-color: #632466;" class="btn btn-danger"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a></li>
+                    <li><a href="#" class="btn btn-facebook"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
-                    <li><a href="https://plus.google.com/dcac/posts" class="btn btn-danger"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    <li><a href="#" class="btn btn-danger"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
                     </li>
                 </ul>
             </div>

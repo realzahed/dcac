@@ -7,7 +7,6 @@
     <jsp:useBean class="product.product" id="product" scope="session"></jsp:useBean>
     <%@page import="java.sql.*, database.*" %>
     <title>DCAC</title>
-    <script src="assets/js/jquery.js"></script>
     <script src="js/jquery-1.7.2.min.js"></script>
     <link rel="icon" href="assets/img/icons/logo.ico"/>
     <link rel="stylesheet" href="assets/css/stylemain.css"/>
@@ -65,6 +64,5 @@
       </div>
     </div>         
   </div> 
-  <script src="assets/js/application.js"></script>
  </body>
 </html>

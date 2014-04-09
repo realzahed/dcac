@@ -27,7 +27,7 @@
     }
 </style>
     <div class="panel panel-default">
-        <div class="panel-heading">Most Viewed Products<span class="pull-right"><a class="btn btn-default btn-embossed btn-xs" href=../../viewProducts_.jsp>View All</a></span></div>
+        <div class="panel-heading">Most Viewed Products<span class="pull-right"><a class="btn btn-default btn-embossed btn-xs" href="../viewProducts_.jsp">View All</a></span></div>
         <div class="panel-body">
         <%
          String sqlTopMostProds = "SELECT * "

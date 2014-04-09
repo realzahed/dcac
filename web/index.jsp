@@ -57,49 +57,12 @@
         </div>
       <!--col-md-9-->   
         <div class="col-md-9">
-          <div class="row carousel-holder" style="margin-bottom: 20px;">
-            <div id="myCarousel" class="col-sm-12 carousel slide" data-ride="carousel">
-             <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-             <div class="carousel-inner">
-              <div class="item active">
-                  <img data-src="assets/img/banner/engineering.png" alt="First slide" src="assets/img/banner/engineering.png">
-                <div class="container">
-                  <div class="carousel-caption hidden-xs">
-                    <h1>More ways to access your content</h1>
-                    <p>In todays fast track world, having access to your content at the right time is important. We deliver this to you at the right moment. Find out how by Signing Up or Logging In to your account</p>
-                    <p><a class="showForm btn btn-bsu" href="#" role="button">Sign up today</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                  <img data-src="assets/img/banner/nowait.png" alt="Second slide" src="assets/img/banner/nowait.png">
-                <div class="container">
-                  <div class="carousel-caption hidden-xs">
-                    <h1>No Wait, No Weight</h1>
-                    <p>The days of carrying boatload of books around are over. Use DCAC to access your content from your smartphone or desktop. It&apos;s that easy.</p>
-                    <p><a class="btn btn-outline" href="#" role="button">Learn more</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                  <img data-src="assets/img/banner/dcet.png" alt="Third slide" src="assets/img/banner/dcet.png">
-                 <div class="container">
-                  <div class="carousel-caption hidden-xs">
-                    <h1>Deccan College of Engineering and Technology Project</h1>
-                    <p>Visit our <a href="http://deccancollege.ac.in">College Website</a> to know more.</p>
-                    <p><a class="btn btn-primary" href="http://deccancollege.ac.in" role="button">Visit Now</a></p>
-                  </div>
-                </div>
-              </div>
+          <div class="row" style="margin-bottom: 20px;">
+            <div class="col-sm-12 img-responsive">
+                <a href="viewProducts_.jsp">
+                <img src="assets/img/banner/engineering.png" class="img-rounded" alt="Books Available" />
+                </a>
             </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="fa fa-chevron-right"></span></a>
-          </div>
           </div>
           <jsp:include page="includesPage/mainHeaders/index_latestAddedProducts.jsp"></jsp:include>
           <div class="hidden-sm hidden-xs">
@@ -168,14 +131,6 @@
       </div>
     </div><!-- /.container -->
 </section><!--/.main-->
-<script>
-$('#myCarousel').carousel({
-        interval:   4000
-});
-</script>
 <jsp:include page="includesPage/_footer.jsp"></jsp:include>
 </body>
 </html>
-
-
-

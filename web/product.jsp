@@ -15,7 +15,8 @@
     <link rel="icon" href="assets/img/icons/logo.ico"/>
     <link rel="stylesheet" href="assets/css/stylemain.css"/>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css"/> 
-    <script src="js/jquery-1.7.2.min.js"></script> 
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/olly.js"></script>
     <style>
       #product-images {
         -moz-box-shadow:    inset 0 0 8px #c5c5c5;

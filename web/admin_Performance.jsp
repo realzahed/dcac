@@ -13,8 +13,8 @@
     <!-- Default Stylesheets -->
     <link rel="icon" href="assets/img/icons/logo.ico"/>
     <link rel="stylesheet" href="assets/css/stylemain.css"/>
-    <link rel="stylesheet" href="assets/css/animate.css"/>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+    <script src="js/jquery-1.7.2.min.js"></script> 
     <style type="text/css">
         #leftside,.clickable {cursor: pointer;}
         .panel-heading span {margin-top: -20px;font-size: 15px;}
@@ -37,7 +37,7 @@
         %>
     <div class="container animated fadeInDownBig">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 visible-lg">
                 <div  id="sidebar-nav" class="list-group">
                     <a href="admin_Performance.jsp" class="list-group-item list-group-item-info"><i class="fa fa-dashboard fa-lg fa-fw"></i> Dashboard</a>
                     <a href="admin_addProduct.jsp" class="list-group-item"><i class="fa fa-plus-square fa-lg fa-fw"></i> Add Product</a>
@@ -93,6 +93,7 @@
                 %>
                 <div class="panel-heading">
                         <h3 class="panel-title">Administrator Dashboard</h3>
+                        <span class="pull-right clickable"><i class="fa fa-chevron-up"></i></span>
                 </div>
                 <div class="panel-body text-center">
                     <a style="border-radius: 0px;" class="btn btn-danger" href="admin_manageProduct.jsp"><span class="badge"><%= qty %></span> Items below Quantity</a>     
@@ -112,19 +113,19 @@
            </div>
            </div>
           </div>
-           <div id="scrolltoTop">
-                <a href="#">Top <i class="fa fa-chevron-up"></i></a>
-            </div>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/application.js"></script>
     <script type="text/javascript">
-    $('#scrolltoTop').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-            });
+    $(document).on('click', '.panel-heading span.clickable', function(e){
+        var $this = $(this);
+            if(!$this.hasClass('panel-collapsed')) {
+                    $this.parents('.panel').find('.panel-body').slideUp();
+                    $this.addClass('panel-collapsed');
+                    $this.find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            } else {
+                    $this.parents('.panel').find('.panel-body').slideDown();
+                    $this.removeClass('panel-collapsed');
+                    $this.find('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            }
+    });
     </script>
-<script type="text/javascript">
-$(document).on("click",".panel-heading span.clickable",function(e){var t=$(this);if(!t.hasClass("panel-collapsed")){t.parents(".panel").find(".panel-body").slideUp();t.addClass("panel-collapsed");t.find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down")}else{t.parents(".panel").find(".panel-body").slideDown();t.removeClass("panel-collapsed");t.find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up")}})
-</script>
-</body>
+  </body>
 </html>

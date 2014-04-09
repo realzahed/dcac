@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="assets/css/stylemain.css"/>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
     <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/myScript.js"></script>
     <style type="text/css">
         #targetPrev {
             padding:5px;

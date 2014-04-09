@@ -39,7 +39,6 @@ footer{padding:20px 0;background-color:#f7f7f7;box-shadow:0 0 20px #ccc}.college
     new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
     }
 </script>
-<script src="../js/application.js"></script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 // scroll-to-top button show and hide

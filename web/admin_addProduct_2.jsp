@@ -12,9 +12,7 @@
     <%@page import="java.sql.*, database.*" %>
     <link rel="icon" href="assets/img/icons/logo.ico"/>
     <link rel="stylesheet" href="assets/css/stylemain.css"/>
-    <link rel="stylesheet" href="assets/css/animate.css"/>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
-    <script src="js/product.js"></script>
     <script src="js/jquery-1.7.2.min.js"></script>
 </head>
 <body>
@@ -166,12 +164,10 @@
        </div>
      </div>
    </div>
-    <script src="js/myScript.js"></script>
-    <script type="text/javascript">
+   <script type="text/javascript">
         $(document).ready (function () {
           $('#selectMenuCategory').click(function () {
             var category = $(this).val();
-            //alert ("Aargh " +getCategory);
             $.get('getProductSubCategory', 
             { category: category}, 
             function (data){
@@ -179,6 +175,6 @@
             });
          });
         });
-    </script>
+  </script>
  </body>
 </html>
