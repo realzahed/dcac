@@ -60,7 +60,7 @@
           <div class="row" style="margin-bottom: 20px;">
             <div class="col-sm-12 img-responsive">
                 <a href="viewProducts_.jsp">
-                <img src="assets/img/banner/engineering.png" class="img-rounded" alt="Books Available" />
+                <img src="assets/img/banner/engineering.png" class="img-rounded img-responsive" alt="Books Available" />
                 </a>
             </div>
           </div>

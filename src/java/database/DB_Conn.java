@@ -12,7 +12,7 @@ public class DB_Conn {
     
     public Connection getConnection() throws SQLException, ClassNotFoundException  {
         Class.forName("com.mysql.jdbc.Driver"); 
-        con=DriverManager.getConnection("jdbc:mysql://mysql-project.jelastic.planeetta.net/"+database+"",""+username+"",""+password+""); 
+        con=DriverManager.getConnection("jdbc:mysql://mysql-project.jelasticloud.com/"+database+"",""+username+"",""+password+""); 
        // stm=con.createStatement(); 
         return con;
     }
