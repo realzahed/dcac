@@ -8,12 +8,20 @@ import java.sql.*;
 
 public class DB_Conn {
 
+<<<<<<< HEAD
     private String database="dcac", username = "storeuser", password = "1234567";
+=======
+    private String database="dcac", username = "abc", password = "***";
+>>>>>>> origin/master
     private Connection con;
     
     public Connection getConnection() throws SQLException, ClassNotFoundException  {
         Class.forName("com.mysql.jdbc.Driver"); 
+<<<<<<< HEAD
         con=DriverManager.getConnection("jdbc:mysql://localhost:3306/"+database+"",""+username+"",""+password+""); 
+=======
+        con=DriverManager.getConnection("jdbc:mysql://mysql-hostname.com/"+database+"",""+username+"",""+password+""); 
+>>>>>>> origin/master
        // stm=con.createStatement(); 
         return con;
     }
