@@ -41,15 +41,6 @@ public class _logoutServlet extends HttpServlet {
         } finally {            
             out.close();
         }
-        /*catch (Exception e) {
-            //out.println(" Problem in the process execution...");
-            message = "An Error occoured during the process of login";
-            messageDetail = "We are extremely sorry to have this but we had an error during your process of login please do try after some time,";
-                   
-            request.setAttribute("message", message);
-            request.setAttribute("messageDetail", messageDetail);
-            dispatchMessage.forward(request, response);
-        }*/
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

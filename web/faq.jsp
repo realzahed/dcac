@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DCAC - Major Project - Frequently Asked Questions">
+    <meta name="description" content="DCAC - Major Project">
     <meta name="author" content="Zahed Shareef">
     <title>DCAC FAQ</title>        
     <!-- Default Stylesheets -->
@@ -137,12 +137,12 @@
             <div class="col-lg-8 col-lg-offset-2" id="social">
                 <h2>F.A.Q. Distributed Content Access On Cloud</h2>
                 <p>Feel free to email us to provide some feedback on our web-application, give us suggestions for adding new features, or to just say hello!</p>
-                <a href="mailto:feedback@dcac.com">feedback@dcac.com</a>
+                <a href="feedback@dcac.com">feedback@dcac.com</a>
                 <ul class="list-inline banner-social-buttons">
-                    <li><a href="#" style="background-color:#87318c;border-color: #632466;" class="btn btn-danger"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a></li>
-                    <li><a href="#" class="btn btn-facebook"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    <li><a href="https://twitter.com/dcac" style="background-color:#87318c;border-color: #632466;" class="btn btn-danger"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a></li>
+                    <li><a href="https://facebook.com/dcac" class="btn btn-facebook"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
-                    <li><a href="#" class="btn btn-danger"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    <li><a href="https://plus.google.com/dcac/posts" class="btn btn-danger"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
                     </li>
                 </ul>
             </div>
@@ -158,8 +158,18 @@
             <article class="ac-small">
                 <div class="list-group">
                     <a href="#" class="list-group-item">
-                      <h4 class="list-group-item-heading">List group item heading</h4>
-                      <p class="list-group-item-text">...</p>
+                      <p>
+                          <b>What is 'Profile'? How do I update my information?</b>
+                          <br>It is easy to update your account and view your orders any time through 'Profile'.
+                         'Profile' allows you complete control over your transactions on Manage/edit your personal data like 
+                      <ul>
+                              Address,                          
+                              Phone Number,                        
+                              Email Id,                        
+                              Change your Password,                  
+                              Track Order Status etc 
+                      </ul>
+                      </p>
                     </a>
                   </div>
             </article>
@@ -168,35 +178,28 @@
             <input id="ac-2" name="accordion-1" type="checkbox" />
             <label for="ac-2">Orders</label>
             <article class="ac-medium">
-                <p>Some content... </p>
+                <p class="lead"><b>How do I know my order has been confirmed?</b><br>
+                    Once your order has been logged and payment authorization has been received, the seller confirms receipt of the order and begins processing it.
+                An Order Summary containing the details of your order is generated. <br>In this, you will be provided with a unique Order ID, a listing of the item(s) you have ordered and the expected delivery time.
+                <br><b>Can I order a product that is 'Out of Stock'?</b>
+                <br>Unfortunately, products listed as 'Out of Stock' are not available for sale</p>
             </article>
         </div>
         <div>
             <input id="ac-3" name="accordion-1" type="checkbox" />
             <label for="ac-3">Shopping</label>
             <article class="ac-medium">
-                <p>Some content... </p>
+                <p><b>Is it necessary to have an account to shop?</b>
+                    <br>You can shop on by providing just your email ID. While it is not necessary to have an account to shop for and purchase items, it is recommended that you create one. By creating your own Flipkart account, you can enjoy a personalized shopping experience, including quicker checkout</p>
             </article>
         </div>
         <div>
             <input id="ac-4" name="accordion-1" type="checkbox" />
             <label for="ac-4">Order Status</label>
             <article class="ac-medium">
-                <p>Some content... </p>
-            </article>
-        </div>
-        <div>
-            <input id="ac-5" name="accordion-1" type="checkbox" />
-            <label for="ac-5">Media Formats and Copyright</label>
-            <article class="ac-medium">
-                <p>Some content... </p>
-            </article>
-        </div>
-        <div>
-            <input id="ac-6" name="accordion-1" type="checkbox" />
-            <label for="ac-6">Troubleshooting FAQ</label>
-            <article class="ac-medium">
-                <p>Some content... </p>
+                <p><b>How do I check the current status of my orders?</b><br>            
+                You can review the status of your orders and other related information in the 'Order History' section
+                In the Profile page, click on the 'Order History' link to view the status of all your orders. To view the status of a specific order, click on the 'Order Number' link.</p>
             </article>
         </div>
     </section>

@@ -7,15 +7,16 @@ package database;
 import java.sql.*;
 public class DB_Conn {
 
-    private String database="dcac", username = "storeuser1", password = "1234567";
+    private String database="dcac", username = "storeuser", password = "1234567";
     private Connection con;
     
     public Connection getConnection() throws SQLException, ClassNotFoundException  {
         Class.forName("com.mysql.jdbc.Driver"); 
-        con=DriverManager.getConnection("jdbc:mysql://mysql-project.jelasticloud.com/"+database+"",""+username+"",""+password+""); 
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/"+database+"",""+username+"",""+password+""); 
        // stm=con.createStatement(); 
         return con;
     }
+
     public String getDatabase() {
         return database;
     }

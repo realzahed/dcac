@@ -120,6 +120,7 @@
                 </div>
             </div>
             <div class="alert alert-dismissable hidden-xs hidden-sm" id="responsive" style="background-color: #f7f1f0;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                 <dl style="text-align: justify;">
                     <dt>Responsive Layout</dt>
                     <img class="hidden-sm hidden-md" style="padding: 10px;" src="assets/img/responsivelog.png" width="240" alt="responsive"/>

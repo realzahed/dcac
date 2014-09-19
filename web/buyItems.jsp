@@ -32,13 +32,6 @@
         .fk-float-left, .fllt {
             float: left;
         }
-        .radio input[type="radio"],
-        .radio-inline input[type="radio"],
-        .checkbox input[type="checkbox"],
-        .checkbox-inline input[type="checkbox"] {
-          float: left;
-          margin-left: -20px;
-        }
     </style>
 </head>
 <body>  
@@ -104,18 +97,18 @@
                         <span class="label label-primary">Payment Mode</span>
                         <div class="radio-inline">
                             <label>
-                              <input type="radio" name="ynRadio" class="radioBtn" value="no" />Cash On Delivery
+                                <input type="radio" name="ynRadio" class="radioBtn" value="no"/>Cash On Delivery
                             </label>
                         </div>
                         <div class="radio-inline">
                             <label>
-                              <input type="radio" name="ynRadio" class="radioBtn" value="yes" />Debit Card
+                              <input type="radio" name="ynRadio" class="radioBtn" value="yes" checked="true" />Debit Card
                             </label>
                         </div>  
                         <div class="form-group">
                             <label for="inputpayment" class="col-sm-2 control-label">Debit Card Number <span class="text-danger">*</span> </label>
                              <div class="col-sm-4">
-                                 <input type="text" class="form-control" id="textField"  maxlength="20" onkeypress="return isNumber(event)" />
+                                 <input type="text" class="form-control" id="textField"  maxlength="20" onkeypress="return isNumber(event)" onblur="checkTextField(this);"/>
                              </div>
                         </div>
                         <div class="form-group">
@@ -224,6 +217,12 @@ function isNumber(evt) {
         return false;
     }
     return true;
+}
+
+function checkTextField(field) {
+    if (field.value === '') {
+        alert("Payment field is Empty");
+    }
 }
 </script>
   </body>

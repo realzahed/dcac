@@ -100,8 +100,7 @@ public class addProduct extends HttpServlet {
         if (!productName.equals("") || !price.equals("") ){
             try {
                 String insertQuery = ""
-                        + "INSERT INTO  "
-                        + "`dcac`.`products` "
+                        + "INSERT INTO  `dcac`.`products` "
                         + "(`product_id` ,"
                         + "`product-name` ,"
                         + "`sub-category-name` ,"

@@ -8,7 +8,7 @@ import java.util.regex.*;
 
 public class EmailValidator {
     boolean result = false;
-        private Pattern pattern;
+       private Pattern pattern;
     private Matcher matcher;
     private static final String EMAIL_PATTERN = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
 
@@ -28,26 +28,6 @@ public class EmailValidator {
         return matcher.matches();
 
     }
-          
-          /*
-    public boolean isValidEmail(String email){
-        
-        Pattern p=Pattern.compile("[a-zA-Z]*[0-9]*@[a-zA-Z]*\\.[a-zA-Z]*");
-        Matcher m=p.matcher(email);
-        //Matcher m=p.matcher(args[0]);
-        boolean b=m.matches();
-        if(b==true)
-        {
-            result = true;
-        }
-        else
-        {
-            result = false;
-        }
-        return result;
-    }
-    */
-          
     
     public static void main(String arg[]){
         EmailValidator valid = new EmailValidator();

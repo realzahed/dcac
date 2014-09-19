@@ -3,10 +3,10 @@ package helpers;
 public class StringSlasher {
     public void sqlSlasher (String sql){
         char arr [] = sql.toCharArray();
-        String strarr [] = sql.split(" ");
-        
-        for (int i = 0 ; i< strarr.length ; i++){
-            System.out.print(""+strarr[i]);
+        String strarr [];
+        strarr = sql.split(" ");
+        for (String strarr1 : strarr) {
+            System.out.print("" + strarr1);
         }
     }
     
