@@ -622,7 +622,7 @@ footer {
 }
 
 .comments {
-    background: #10bbf1;
+    background: #fafafa;
     color: white;
     text-align: center;
     padding: 70px 0 60px;
@@ -887,7 +887,7 @@ footer {
 }
 
 .discover-img img {
-    display: block
+    display: block;
 }
 
 .discover-img-inside {
@@ -973,11 +973,7 @@ footer {
       max-width: none;
       margin-left: -80px;
       margin-right: -80px;
-      border: 1px solid #000;
   }
-    .footerimg img { 
-   border:1px solid #021a40;
-}
 
   .comments .box {
       padding-left: 0;
