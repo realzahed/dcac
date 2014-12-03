@@ -411,7 +411,13 @@ input:focus::-webkit-input-placeholder {
 
 header {
     padding: 104px 0;
-    background: url(../images/main.jpg) no-repeat 50% 50%;
+   
+  background: -webkit-linear-gradient(90deg, #00bf8f 10%, #001510 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #00bf8f 10%, #001510 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #00bf8f 10%, #001510 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #00bf8f 10%, #001510 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #00bf8f 10%, #001510 90%); /* W3C */
+        
     font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
     -moz-background-size: cover;
@@ -572,6 +578,13 @@ footer {
 }
 
 .simple {
+    
+  background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* W3C */
+        
     padding: 104px 0 89px
 }
 
