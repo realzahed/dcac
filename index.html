@@ -17,6 +17,7 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/anim.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet" >
     <!--[if lt IE 9]>
         <script src="js/html5.js"></script>
@@ -24,28 +25,54 @@
     <![endif]-->
 </head>
 <body class="no-js">
+    
+     <!-- Nav -->
+            <nav>
+                <!-- THIS IS THE MENU -->
+                <div class="mobilenav">
+                  <li><a href="#main"><span>Home</span></a></li>
+                  <li><a href="#features"><span>Features</span></a></li>
+                  <li><a href="#discover"><span>Responsive</span></a></li>
+                  <li><a href="#screenshots"><span>Explore</span></a></li>
+                  <li><a href="#contact"><span>Contact</span></a></li>
+                </div> 
+                <!-- THIS IS THE ICON -->
+                <a href="javascript:void(0)" class="icon">
+                  <div class="hamburger btn-rounded">
+                    <div class="menui top-menu"></div>
+                    <div class="menui mid-menu"></div>
+                    <div class="menui bottom-menu"></div>
+                  </div>
+                </a>
+            </nav>
+            <!-- ./Nav --> 
+    
     <div class="main">
-        <header>
-            <div class="bgImg">
-            <div class="wrap">
-                <img src="images/headerimg.png" width="400" alt="" class="animated bigEntrance header-img">
-                <div class="header-wrapper">
-                    <h1><span>Distributed Content Access on</span>  Cloud</h1>
-                    <p>This is a project by the students of Osmania University using Java, JavaScript, HTML5 &amp; CSS3. We leveraged the latest technologies and concepts such as Responsive Web Design to bring users of our application the best experience.</p>
-                    <p class="autor"><a href="https://www.linkedin.com/in/zahedshareef">Zahed Shareef</a></p>
-                    <div class="buttons-wrapper">
-                        <a href="#features" class="button button-stripe pulse ">Learn more</a>
+        <section id="main">
+            <header>
+                <h5>Visit <strong><a href="http://zahedshareef.com" target="_blank">zahedshareef.com</a></strong></h5>
+                <div class="bgImg">
+                <div class="wrap">
+                    <img src="images/headerimg.png" width="400" alt="" class="header-img">
+                    <div class="header-wrapper">
+                        <h1><span>Distributed Content Access on</span>  Cloud</h1>
+                        <p>This is a project by the students of Osmania University using Java, JavaScript, HTML5 &amp; CSS3. We leveraged the latest technologies and concepts such as Responsive Web Design to bring users of our application the best experience.</p>
+                        <p class="autor"><a href="https://www.linkedin.com/in/zahedshareef">Zahed Shareef</a></p>
+                        <div class="buttons-wrapper">
+                            <a href="#features" class="button button-stripe pulse ">Learn more</a>
+                        </div>
                     </div>
+                    <!-- /.header-wrapper -->
                 </div>
-                <!-- /.header-wrapper -->
-            </div>
-            <!-- /.wrap -->
-          </div>
-        </header>
+                <!-- /.wrap -->
+              </div>
+            </header>
+        </section>
         <div class="spanning">
             <section id="features">
             <div class="promo clearfix">
                 <div class="wrap">
+                    <h4>Features of the Application</h4>
                     <div class="promo-wrapper clearfix">
                         <div class="promo-column">
                             <i class="fa fa-html5 fa-3x"></i>
@@ -81,12 +108,12 @@
                         <h2>Responsive</h2>
                         <p>Responsive Web Design is the step in the right direction. This web application is responsively designed to enable access from any device.</p>
                         <div class="discover-button clearfix">
-                            <a href="#" class="button button-download">
-                                <span class="button-download-title">Download for</span>
+                            <a href="http://mobt.me/451F" target="_blank" class="button button-download">
+                                <span class="button-download-title">View on</span>
                                 <span class="button-download-subtitle">Apple iOS</span>
                             </a>
-                            <a href="#" class="button button-download android">
-                                <span class="button-download-title">Download for</span>
+                            <a href="http://mobt.me/4516" target="_blank" class="button button-download android">
+                                <span class="button-download-title">View on</span>
                                 <span class="button-download-subtitle">Android</span>
                             </a>
                         </div>
@@ -99,27 +126,101 @@
             </div>
             <!-- /.discover clearfix -->
         </section>
-            <div class="video clearfix">
+            
+        <section id="screenshots">
+            <div class="comments clearfix">
                 <div class="wrap">
-                    <div class="video-title">Explore the Application</div>
-                    <div class="video-block">
-                        <iframe class="imgur-album" width="814" height="458" frameborder="0" src="project.html"></iframe>
-                    </div>
-                    <div class="video-share-wrapper clearfix">
-                        <ul class="social-list clearfix">
-                            <li class="video-share-title">Share it with your friends:</li>
-                            <li><a href="#" class="social-twitter">via <strong>Twitter</strong></a></li>
-                            <li><a href="#" class="social-facebook">via <strong>Facebook</strong></a></li>
-                            <li><a href="#" class="social-google">via <strong>Google+</strong></a></li>
+                    <h2>Explore the Application</h2>
+                    <div class="tab">
+                        <div class="box visible">
+                            <h4>Homepage</h4>
+                            <a class="example-image-link" href="http://i.imgur.com/IpGL89k.png" data-lightbox="example-set" data-title="Homepage with minimalist design">
+                                    <img class="example-image" src="/images/projectScreenshots/thumbs/DCAC_Homepage.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <h4>User Login</h4>
+                            <a class="example-image-link" href="http://i.imgur.com/9ZZXMmm.png" data-lightbox="example-set" data-title="User Login made simple">
+                                    <img class="example-image" src="http://i.imgur.com/9ZZXMmm.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="box">
+                            <h4>User SignUp</h4>
+                            <a class="example-image-link" href="http://i.imgur.com/4OEQU0c.png" data-lightbox="example-set" data-title="Slide down user Signup">
+                                    <img class="example-image" src="http://i.imgur.com/4OEQU0c.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="box">
+                            <h4>Product Catalog</h4>
+                             <a class="example-image-link" href="http://i.imgur.com/NhLLH2D.png" data-lightbox="example-set" data-title="Product catalog with categories on sidebar">
+                                    <img class="example-image" src="http://i.imgur.com/NhLLH2D.png" alt="" />
+                             </a>
+                        </div>
+                        <div class="box">
+                            <h4>Product Information</h4>
+                             <a class="example-image-link" href="http://i.imgur.com/s77ZnmZ.png" data-lightbox="example-set" data-title="Product description and purchase option">
+                                    <img class="example-image" src="http://i.imgur.com/s77ZnmZ.png" alt="" />
+                             </a>
+                        </div>
+                        <div class="box">
+                            <h4>Purchase Cart</h4>
+                             <a class="example-image-link" href="http://i.imgur.com/14gmNaU.png" data-lightbox="example-set" data-title="Displays products currently in cart">
+                                    <img class="example-image" src="http://i.imgur.com/14gmNaU.png" alt="" />
+                             </a>
+                        </div>
+                        <div class="box">
+                            <h4>Checkout Process</h4>
+                             <a class="example-image-link" href="http://i.imgur.com/P6n5J9M.png" data-lightbox="example-set" data-title="Simple checkout process with one click informtion fill">
+                                    <img class="example-image" src="http://i.imgur.com/P6n5J9M.png" alt="" />
+                             </a>
+                        </div>
+                        <div class="box">
+                            <h4>Order Summary</h4>
+                             <a class="example-image-link" href="http://i.imgur.com/PzlKs5T.png" data-lightbox="example-set" data-title="Order summary and order status">
+                                    <img class="example-image" src="http://i.imgur.com/PzlKs5T.png" alt="" />
+                             </a>
+                        </div>
+                        <div class="box">
+                            <h4>Print Invoice</h4>
+                             <a class="example-image-link" href="http://i.imgur.com/iyd6sZ6.png" data-lightbox="example-set" data-title="Clean Page to print the Invoice for user">
+                                    <img class="example-image" src="http://i.imgur.com/iyd6sZ6.png" alt="" />
+                             </a>
+                        </div>
+                        <div class="box">
+                            <h4>User Profile</h4>
+                             <a class="example-image-link" href="http://i.imgur.com/CJaZJzH.png" data-lightbox="example-set" data-title="Consists of Order History & Account Settings">
+                                    <img class="example-image" src="http://i.imgur.com/CJaZJzH.png" alt="" />
+                             </a>
+                        </div>
+                        <div class="box">
+                            <h4>Admin Dashboard</h4>
+                             <a class="example-image-link" href="http://i.imgur.com/NAsxeNC.png" data-lightbox="example-set" data-title="Using Google charts to display sales and stock available">
+                                    <img class="example-image" src="http://i.imgur.com/NAsxeNC.png" alt="" />
+                             </a>
+                        </div>
+                        <ul class="tabs">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
+                        <a href="#" class="tab-prev"></a>
+                        <a href="#" class="tab-next"></a>
                     </div>
                 </div>
-                <!-- /.wrap -->
-            </div>
-            <!-- /.videos clearfix -->
 
+            </div>
+            </section>
             <!-- /.comments clearfix -->
-            <div class="simple clearfix">
+            
+            <!--<div class="simple clearfix">
                 <div class="wrap">
                     <div class="simple-content">
                         <h3>The Simplest UI</h3>
@@ -135,23 +236,41 @@
                         <div class="simple-img-inside"><img src="images/projectScreenshots/dcacmobile.jpg" height="400" width="200" alt="DCACScreen"/></div>
                     </div>
                 </div>
-                <!-- /.wrap -->
-            </div>
+
+            </div>-->
             <!-- /.simple clearfix -->
         </div>
         <!-- /.spanning-columns -->
     </div>
     <!-- /.main -->
     <footer>
-        <div class="wrap">
-                <p>Designed &amp; Developed by <a href="http://zahedshareef.github.io/"><em>Zahed Shareef</em></a></p>
-        </div>
+        <section id="contact">
+            <div class="wrap">
+                <p>Designed &amp; Developed by <a href="http://zahedshareef.github.io/"><strong>Zahed Shareef</strong></a></p>
+                <div class="address">
+                    <h4>Hyderabad, Telangana, India 500001 </h4>
+                    <p><a href="mailto: zahedshaeef1@gmail.com">zahedshareef1@gmail.com</a></p>
+                </div>
+                <div class="share-wrapper clearfix">
+                    <ul class="social-list clearfix">
+                        
+                        <li><a href="https://twitter.com/realzahed" class="social-twitter"><strong>Twitter</strong></a></li>
+                        <li><a href="https://facebook.com/realzahed" class="social-facebook"><strong>Facebook</strong></a></li>
+                        <li><a href="https://plus.google.com/+zahedshareef" class="social-google"><strong>Google+</strong></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
         <!-- /.wrap -->
     </footer>
+    <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/library.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
     <script src="js/retina.js"></script>
+    <script src="js/lightbox.js"></script>
 
     <script src="../../js/waypoints.min.js"></script>
     <script src="../../js/scripts.js"></script>
