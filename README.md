@@ -11,7 +11,7 @@ Created using [Bootstrap](https://github.com/twitter/bootstrap)
 
 Updated on 3rd December, 2014
 
-Test Drive my page on:
+For more information visit:
 http://zahedshareef.github.io/dcac
 
 Blog & Website:
